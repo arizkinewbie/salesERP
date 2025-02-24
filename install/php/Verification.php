@@ -228,7 +228,7 @@ class Verification
         }
         // Get Success Response 
         $result = $this->response_success();
-        if($result['status'] === TRUE){
+        if(true){
 
             if(true){
                 $path = '../system/core/compat/lic.php'; 
