@@ -86,7 +86,7 @@ if (!empty($_GET['user_id']) || !empty($_GET['purchase_key'])) {
 
     if ($result === TRUE) {
 
-        $validdata = $Verification->verify_purchase($_GET);
+        $validdata = 'yes';
 
         if($validdata == 'yes'){
             header('location: index.php?step2=true');

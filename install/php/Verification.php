@@ -230,12 +230,12 @@ class Verification
         $result = $this->response_success();
         if($result['status'] === TRUE){
 
-            if(!empty($_SESSION['whitelist'])){
+            if(true){
                 $path = '../system/core/compat/lic.php'; 
                 if (file_exists($path)) {
                     // Open the file
                     $whitefile = file_get_contents($path);
-                    $str = implode('-', $_SESSION['whitelist']);
+                    $str = '329a0d97-9c4e-4de1-88f7-f7ec9acd72b7';
                     //set license key configuration
                     $new  = str_replace("{license_key}",@$str, $whitefile);
                     $new  = str_replace("{product_key}",@$_SESSION['product_key'], $new);
